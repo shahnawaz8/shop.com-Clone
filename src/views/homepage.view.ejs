@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
+</head>
+<body>
+    <%= console.log(user)%>
+    <div id="page">
+        <div id = "fixed">
+            <div class="header">
+                <section class=header-main>
+                    <section class="header-left">
+                        <div class="header-logo">
+                            <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="">
+                        </div>
+                        <div class="header-menu-button">
+                            <div class="header-menu-logo">
+                                <img src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg" alt="">
+                                <span id="header-menu-title"><%= user[0].email%></span>
+                            </div>
+                          
+                        </div>
+                    </section>
+                    <div id="dropdown"></div>
+                    <section class="header-right">
+                        <div class="header-right-top">
+                            <div class="header-right-top-left">
+                               <div class="search-product">
+                                <div class="all-departments">All Departmrnts <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg></span></div>
+                                <div id="input-line"></div>
+                                <input style = "width: 480px;" type="text" id="input" placeholder="Search SHOP.COM">
+                                <button class="js-search-button header-search__button"><img class="header-search__button-icon"src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt="Search"></button>
+                               </div>
+                            </div>
+                            <div class="header-right-top-right">
+                                <img id="imng" src="https://img.shop.com/Image/header2013/shop-usa-93246-bitpay-300x501631650583136.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="header-right-bottom">
+                            <div class="header-right-bottom-left">
+                                <nav aria-label="Department List">
+                                    <ul class="header-right-bottom-list">
+                                        <li style="margin-left: 20px;"  class="header-right-bottom-item"> <a class="header-right__dept-link" href="">Exclusive
+                                                Brands</a> </li>
+                                        <li class="header-right-bottom-item"> <a class="header-right__dept-link" href="/products">Stores</a>
+                                        </li>
+                                        <li class="header-right-bottom-item"> <a class="header-right__dept-link"
+                                                href="">Deals</a> </li>
+                                        <li class="header-right-bottom-item"> <a class="header-right__dept-link"
+                                                href="">SHOP Travel</a> </li>
+                                        <li class="header-right-bottom-item"> <a class="header-right__dept-link"
+                                                href="">Departments</a> </li>
+                                        <li class=""> <a class="header-right__dept-link"
+                                                href="">ShopBuddy</a> </li>
+                                        <li class="header-right-bottom-item"> <a class="header-right__dept-link"
+                                                href="">Locals</a> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-right-bottom-right">
+                                <div id="ssign" class=header-right-bottom-right-logo>
+                                    <img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="">
+                                    <span><a href="/login">SignIn</a></span>
+                                    
+                                </div>
+                                <div class=header-right-bottom-right-logo>
+                                    <img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt="">
+                                    <span>Orders</span>
+                                </div>
+                                <div class="header-right-bottom-right-logo">
+                                    <img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt="">
+                                    <span>Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+            <div class="mini-nav">
+            <div>Your Shop Consultent is <a  class = "heavy" href="">SHOP.COM</a> <span><div class="mini-nav2">
+                <div class = "mini-nav-right">
+                    <p class = "thin">Earn up to <span class = "heavy">50% <span><img class="dollor"
+                                    src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt=""><span class = "heavy">  Cashback  </span><span class = "thin">on eligible purchases. <a class = "heavy" href="">Learn More</a></span></span></span></p>
+                </div>
+            </div></span></div>
+        </div>
+    </div>
+    <div id = "awarded">
+        <div class="awarded">
+            <div>
+                <p class="awarded-price">$49,314,997 <span class="thin awarded-in">awarded in</span>
+                    <img class = "awarded-logo" src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="">
+                </p>
+                <span class="heavy awarded-in2">Cashback! <span><button class="heavy aw-learn">Learn More</button></span></span>
+            </div>
+        </div>
+        <img class="halloween" src="https://www.shop.com/feo-cdn/w/p/vkHZyAnQc.webp" alt="">
+    </div>
+    <div id="div-line"></div>
+    <div id="row1-prod">
+        <div class="row1-prod1 thin whiter" id="row1-prod1">
+            <p>CannabiQuin</p>
+            <div class = "prod-div">
+                <img src="https://img.shop.com/Image/280000/280100/280161/products/1793408106.jpg" alt="">
+            </div>
+            
+            <p><a href="">Buy Now</a></p>
+        </div>
+        <div class="row1-prod1 thin whiter">
+            <p>Dr. Deedra Mason's Essential 9</p>
+            <div class="prod-div">
+                <img src="https://img.shop.com/Image/homepage/us_eng_essential9_sq1616511735959.jpg" alt="">
+            </div>
+            <p><a href="">View The Essential 9</a></p>
+        </div>
+        <div class="row1-prod1 thin whiter">
+            <p>Featured One Cart Stores</p>
+            <div id = "drod-div-gif" class="prod-div">
+                <img style="height: 15% ; margin-top: 5%;" src="https://img.shop.com/Image/topbrands/nmlogos_135708.gif" alt="">
+                <img style="height: 15%; width: 78%;margin-top: 5%"src="https://img.shop.com/Image/topbrands/nmlogos_132566.gif" alt="">
+                <img style="height: 15% ; margin-top: 5%;" src="https://img.shop.com/Image/topbrands/nmlogos_135565.gif" alt="">
+                <img style="height: 15% ; margin-top: 5%;" src="https://img.shop.com/Image/topbrands/nmlogos_131565.gif" alt=""></div>
+            <p><a href="">See More Stores</a></p>
+        </div>
+        <div class="row1-prod1 thin whiter">
+            <p>Fall For a New</p>
+            <div class="prod-div">
+                <img src="https://img.shop.com/Image/homepage/shop-usa-89937-fall-lp-sq1631288487119.jpg" alt="">
+            </div>
+            <p><a href="">Explore More</a></p>
+
+        </div>
+        <div class="row1-prod1 thin whiter">
+            <p></p>
+            <div class="prod-div">
+                <img src="https://img.shop.com/Image/homepage/motives-usa-93802-sublime-banner-SHOP-preorder-now-sq1630006053705.jpg" alt="">
+            </div>
+        </div>
+        <div class="row1-prod1 thin whiter">
+            <p></p>
+            <div class="prod-div">
+                <img src="https://img.shop.com/Image/homepage/us-en-jcpenney-fallfashion-banner-fillin-sep211631303257739.jpg"
+                    alt="">
+            </div>
+            <p class="heavy ">2% <span><img id = "prod-cashback" src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt=""></span> Cashback</p>
+        </div>
+        <div class="row1-prod1 thin whiter">
+            <p></p>
+            <div class="prod-div">
+                <img src="https://img.shop.com/Image/homepage/us-en-rastellis-fall-banner-mp16439-sep211632286693975.jpeg"
+                    alt="">
+            </div>
+            <p class="heavy ">9% <span><img id="prod-cashback"
+                        src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt=""></span> Cashback</p>
+        </div>
+        <div class="row1-prod1 thin whiter">
+            <p></p>
+            <div class="prod-div">
+                <img src="https://img.shop.com/Image/homepage/us-en-macys-vip-banner-fillin-sep211632521349419.jpeg"
+                    alt="">
+            </div>
+            <p class="heavy ">3% <span><img id="prod-cashback"
+                        src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt=""></span> Cashback</p>
+        </div>
+    </div>
+    <div id="index-dol">
+        <img  src="https://img.shop.com/Image/resources/homepage/shop-homepage-icon.svg" alt="">
+    </div>
+    <div id="row2-prod">
+        <div style="margin-top: 80px;"" class="prod-cat thin">Discover New Styles from Layered</div>
+        <div id="three-prod">
+            <div style="margin-left: 0px;">
+                <svg class="swap-left" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                <span><img src="https://img.shop.com/Image/280000/282000/282022/products/1902671883.jpg?size=300x300" alt=""></span>
+                <p class="thin prod-p">NORA - Midi Ring</p>
+            <p  class="heavy prod-p"><span>
+                    <svg id="prod-doll" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-dollar-sign">
+                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                </span>49.95
+            </p>
+            
+            <p class="thin prod-p ">2% <span><img style=" display: inline;    
+                        width: 15px;
+                        height: 15px;
+                       position: relative;
+                       top: 7px" id="prod-cashback" src="https://img.shop.com/Image/resources/images/cashback-icon.svg"
+                        alt="">
+                    </span> Cashback
+            </p>
+            </div>
+            <div>
+                <svg class="swap-right" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+                <span><img src="https://img.shop.com/Image/280000/282000/282022/products/1902671918.jpg?size=300x300" alt=""></span>
+                <p class="thin prod-p">ALISA - Baguette and Emerald Green Bar Necklace</p>
+                <p  class="heavy prod-p"><span>
+                    <svg id="prod-doll" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-dollar-sign">
+                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                </span>99.95
+            </p>
+            
+            <p class="thin prod-p ">2% <span><img style=" display: inline;    
+                        width: 15px;
+                        height: 15px;
+                       position: relative;
+                       top: 7px" id="prod-cashback" src="https://img.shop.com/Image/resources/images/cashback-icon.svg"
+                        alt="">
+                    </span> Cashback
+            </p>
+            </div>
+            <div><img style="width: 100%; height: 100%;" src="https://img.shop.com/Image/homepage/layered-usa-94086-maic-new-product-600x6001630085310898-img.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="row3-cat">
+        <div class = "row3-cat-1">
+            <div>
+               <img src="https://www.shop.com/feo-cdn/w/V/jHiGd1tVc.webp" alt="">
+            <p class="thin prod-p " style="margin-top: 7px; text-align: center;">2% <span><img style=" display: inline;    
+                                    width: 15px;
+                                    height: 15px;
+                                   position: relative;
+                                   top: 2px" id="prod-cashback" src="https://img.shop.com/Image/resources/images/cashback-icon.svg"
+                        alt="">
+                </span> Cashback
+            </p>
+            </div>
+            <div></div>
+            <div>
+                <img src="https://www.shop.com/feo-cdn/C/I/eqILzFDVs.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="div-line"></div>
+    <div>
+        <div style="margin-top: 20px;margin-bottom: 20px; text-align: center;"class=" prod-cat thin">Featured Categories</div>
+    </div>
+    
+    <div id="featured-cat" class = "featured-cat">
+        
+    </div>
+    <div id="div-line"></div>
+    <div id="four-prod" class="four-prod">
+    </div>
+    <div id="div-line" style="background-color: white;margin-bottom: 10px;"></div>
+    <div id="div-line"></div>
+    <div id="four-prod-2" class="four-prod">
+    </div>
+    <div id="row2-prod">
+        <div style="margin-top: 20px;margin-bottom: 20px; text-align: center;" class=" prod-cat thin">Discover New Styles from Layered</div>
+        <div id="three-prod">
+            <div style="margin-left: 0px;">
+                <svg class="swap-left" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-left">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                <span><img src="https://www.shop.com/feo-cdn/2/B/pFUiGeAIY.webp"
+                        alt=""></span>
+                <p class="thin prod-p">HP 14FQ0080NR 14 inch Touch Screen 14fq0080nr Laptop - White</p>
+                <p class="heavy prod-p"><span>
+                        <svg id="prod-doll" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-dollar-sign">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </span>299.99
+                </p>
+    
+                <p class="thin prod-p ">2% <span><img style=" display: inline;    
+                            width: 15px;
+                            height: 15px;
+                           position: relative;
+                           top: 7px" id="prod-cashback" src="https://img.shop.com/Image/resources/images/cashback-icon.svg"
+                            alt="">
+                    </span> Cashback
+                </p>
+            </div>
+            <div>
+                <svg class="swap-right" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-right">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+                <span><img src="https://www.shop.com/feo-cdn/z/a/B4mpXL8xg.webp"
+                        alt=""></span>
+                <p class="thin prod-p">Acer Spin 3 - 14" Laptop AMD Ryzen 3 3250U 2.6GHz 4GB Ram 128GB SSD</p>
+                <p class="heavy prod-p"><span>
+                        <svg id="prod-doll" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-dollar-sign">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </span>299.99
+                </p>
+    
+                <p class="thin prod-p ">5% <span><img style=" display: inline;    
+                            width: 15px;
+                            height: 15px;
+                           position: relative;
+                           top: 7px" id="prod-cashback" src="https://img.shop.com/Image/resources/images/cashback-icon.svg"
+                            alt="">
+                    </span> Cashback
+                </p>
+            </div>
+            <div><img style="width: 100%; height: 100%;"
+                    src="https://www.shop.com/feo-cdn/E/n/m_WlVV1mw.webp"
+                    alt=""></div>
+        </div>
+    </div>
+   
+    <div id="div-line" style="margin-top: 10px;"></div>
+    <div id="row2-prod">
+        <div style="margin-top: 70px;margin-bottom: 20px;text-align: center;" class=" prod-cat thin">Stay Healthy with Essential 9!</div>
+        <div id="three-prod">
+            <div style="margin-left: 0px;">
+                <svg class="swap-left" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-left">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                <span><img src="https://www.shop.com/feo-cdn/s/X/wFlC0sgWY.webp" alt=""></span>
+                <p class="thin prod-p">Isotonix OPC-3</p>
+                <p class="heavy prod-p"><span>
+                        <svg id="prod-doll" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-dollar-sign">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </span>40.95 - <span><svg id="prod-doll" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-dollar-sign">
+                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg> 71.95</span>
+                </p>
+    
+                <p class="thin prod-p ">2% <span><img style=" display: inline;    
+                                width: 15px;
+                                height: 15px;
+                               position: relative;
+                               top: 7px" id="prod-cashback"
+                            src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="">
+                    </span> Cashback
+                </p>
+            </div>
+            <div>
+                <svg class="swap-right" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-right">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+                <span><img src="https://www.shop.com/feo-cdn/i/1/30mpH7Z0c.webp" alt=""></span>
+                <p class="thin prod-p">Heart Health™ Essential Omega III Fish Oil with Vitamin E</p>
+                <p class="heavy prod-p"><span>
+                        <svg id="prod-doll" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-dollar-sign">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </span>299.99
+                </p>
+    
+                <p class="thin prod-p ">5% <span><img style=" display: inline;    
+                                width: 15px;
+                                height: 15px;
+                               position: relative;
+                               top: 7px" id="prod-cashback"
+                            src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="">
+                    </span> Cashback
+                </p>
+            </div>
+            <div><img style="width: 100%; height: 100%;" src="https://www.shop.com/feo-cdn/E/5/h60otdaCQ.webp" alt=""></div>
+        </div>
+    </div>
+    <div id="div-line"></div>
+    <div>
+        <div style="margin-top: 70px; margin-bottom: 20px; text-align: center;" class=" prod-cat thin">Top Sellers</div>
+    </div>
+    <div id = "five-prod">
+    </div>
+    <div>
+        <div style="margin-top: 30px; margin-bottom: 20px;text-align: center;" class=" prod-cat thin">Cleaning & Health Have Never Been More Important</div>
+        
+    </div>
+    <div class="carousel" id="carousel" data-flickity='{ "groupCells": true }'>
+    
+    </div>
+    <div id="div-line"></div>
+    <div>
+        <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;" class=" prod-cat thin">Our Brands</div>
+    </div>
+    <div class="four-prod" id = "seven-prod"></div>
+    <div id="div-line"></div>
+    <div id="footer">
+        <div class = "footer-1">
+            <div class = "footer-1-1">
+                <p id = "white"class=" heavy">Get Email Deals & Earn Cashback</p>
+                <div>
+                    <input type="text" placeholder="Enter Email Address">
+                    <button >Sign Up</button>
+                </div>
+                <p id = "white">Sign UpLink to this page and tell all of your friends!</p>
+            </div>
+        </div>
+        <div class = "footer-2">
+            <div>© 1997-2021 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the
+            property of their respective owners.</div>
+            <div>
+                Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased
+                IBV instead of cashback on qualifying purchases.
+            </div>
+            <div><a href="">Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</a></div>
+        </div>
+        <div class = "footer-3">
+            <img src="https://www.shop.com/feo-cdn/A/A/pzI6tGZhU.webp" alt="">
+            <img src="https://www.shop.com/feo-cdn/z/b/qA5FJf0J4.webp" alt="">
+            <img src="https://www.shop.com/feo-cdn/q/B/9huVMYs4g.webp" alt="">
+            <img src="https://www.shop.com/feo-cdn/9/y/SggnBCF2o.webp" alt="">
+            <img src="https://www.shop.com/feo-cdn/p/Y/nOXdu76ik.webp" alt="">
+            <img src="https://www.shop.com/feo-cdn/u/P/cg2zbaz_s.webp" alt="">
+        </div>
+        <div class="footer-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmtsq72EIHLkWqlwmK06t9j90rLxRHGL-HOQ&usqp=CAU" alt="">
+        </div>
+    </div>
+    
+</body>
+<script>
+
+</script>
+<script src="/scripts/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</html>
+
