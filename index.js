@@ -1,15 +1,16 @@
 const express = require("express");
-
+const cors = require("cors");
+const process = require("dotenv");
 const path = require("path");
 const app = express();
-const port = process.env.PORT || 3333
+const port = process.env.PORT || 2345
 const connect = require("./src/configs/db");
 app.use(express.json());
+app.use(cors)
 const session = require("express-session");
-const flash = require("connect-flash");
-
+let dbname  = 'web14shop';
 // html pages link
-app.set("views", path.join(__dirname, "src/views"));
+app.set("views", path.join(__dirname, "./src/views"));
 // style sheets
 app.use("/static", express.static(path.join(__dirname, "src/styleSheets")));
 
@@ -31,8 +32,8 @@ app.use(
     saveUninitialized: false,
   })
 );
-// flash
-app.use(flash());
+// // flash
+// app.use(flash());
 
 // images folder
 app.use(express.static("./src/public"));
@@ -48,5 +49,6 @@ const homepageController = require("./src/controllers/homepage.controller")
 app.use("",homepageController)
 app.listen(port, async function (req, res) {
   await connect();
+  console.log(`succesfully connected with database ${dbname}`)
   console.log(`listening at port ${port}`);
 });

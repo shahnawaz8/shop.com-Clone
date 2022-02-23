@@ -87,15 +87,14 @@
                 </section>
             </div>
         </div>
-
-        <form action="/login" method="POST">
+        <form action="http://127.0.0.1:2345/login/user" method="POST">
             <div id="form">
                 <div id = "ask-sign">
                     <p class = "msg-alrt heavy">Don't have an account?</p>
                     <p>With a SHOP.COM account, you can enjoy the following benefits: up to 50% Cashback on eligible purchases, redeem discount
                     coupons, order status and history, saved payment options and addresses, exclusive emails and more. <a href="">Learn more</a></p>
                     <button id="create-in" class="sign-inp opt-inp opt-inp1 heavy" type="submit"
-                        style="font-style: italic; margin-bottom: 50px;"><a id="create-in" href="/signup">Create your new account</a></button>
+                        style="font-style: italic; margin-bottom: 50px;"><a id="create-in" href="http://127.0.0.1:2345/signup">Create your new account</a></button>
                 </div>
                 <div class="signup">
                     <p class="heavy ac-text" style="font-size: 28px;">Sign in</p>
@@ -104,14 +103,13 @@
             
                         <div class="signup-input">
                             <div class="thin">Email address</div>
-                            <input id="userEmail" class="sign-inp" type="email" placeholder="yourname@example.com" style="font-style: italic;">
+                            <input id="userEmail" class="sign-inp" type="email" value="" name="email" placeholder="yourname@example.com" style="font-style: italic;">
                         </div>
                         
                         <div class=""></div>
                         <div class="signup-input">
                             <div class="thin">Password (At least 7 characters)</div>
-                            <input id="userPass" class="sign-inp" type="password" placeholder="Please enter a minimum of 7 characters"
-                                style="font-style: italic;">
+                            <input id="userPass" class="sign-inp" type="password" placeholder="Please enter a minimum of 7 characters" name="password" style="font-style: italic;">
                         </div>
                         
                     </div>
@@ -131,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <button id = "sign-in" class="sign-inp opt-inp opt-inp1 heavy"  style= "font-style: italic; margin-bottom: 50px;">Sign in</button>
+                <input id = "sign-in" type="submit"  class="sign-inp opt-inp opt-inp1 heavy"  style= "font-style: italic; margin-bottom: 50px;" value="Sign in">
                
         </form>
       
@@ -168,5 +166,8 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmtsq72EIHLkWqlwmK06t9j90rLxRHGL-HOQ&usqp=CAU" alt="">
         </div>
     </div>
+
+
+
 </body>
 </html>
