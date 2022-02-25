@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/payment1.css">
+    <style>
+      .headline {
+    width: 80%;
+    width: 15%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    margin-left: 16%;
+    font-family: 'Open Sans', sans-serif;
+}
+#paymentTotal{
+    margin-left: 70px;
+}
+.pto{
+    margin-left: 100px;
+}
+
+.title {
+    display: flex;
+    font-size: 25px;
+}
+.title h1:nth-child(1) {
+    color: #e43137
+}
+.title h1:nth-child(2) {
+    color: #0063d1
+}
+.title h1:nth-child(3) {
+    color: #f4ae01
+}
+.title h1:nth-child(4) {
+    color: #85b716
+}
+
+.SecDiv{
+    background-color: #cff;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 5px;
+}
+.SecDiv p{
+    margin-left: 14px;
+}
+
+.payWith{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-left: 15%;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    gap: 15px;
+}
+.payOptions {
+    width: 70%;
+    border: 1px solid black;   
+}
+.payOptions h3{
+    margin-left: 14px;
+}
+.newCard {
+    height: 20px;
+    width: 90.5%;
+    padding: 20px;
+}
+.PayPal {
+    height: 20px;
+    width: 93.5%;
+    padding: 15px;
+}
+.PayPalCredit {
+    height: 20px;
+    width: 93.5%;
+    padding: 15px;
+}
+.GooglePay{
+    height: 20px;
+    width: 93.5%;
+    padding: 15px;
+}
+
+.confirmation {
+    width: 30%;
+    border: 1px solid black;
+    padding: 10px;
+}
+.confirmation > button {
+    width:90%;
+    margin-left: 10px;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: gray;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.ship{
+    border-top: 1px solid red;
+    width: 47%;
+    height:25%;
+    margin-left: 15%;
+    margin-top: 16px;
+}
+
+
+#card{
+    margin-top: 20px;
+    margin-left: 15%;
+    width: 450px;
+    border: 1px solid black;
+    padding: 20px;
+    
+    font-size: 18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#details > input{
+    width: 300px;
+    margin-bottom: 10px;
+    height: 30px;
+    
+}
+
+span{
+    color: red;
+}
+
+#details > input:nth-last-child(1)
+{
+    
+    background-color: grey;
+    font-size: 20px;
+    height: 35px;
+    width: 200px;
+    margin-left: 10%;
+    color: white;
+}
+    </style>
+</head>
+
+
+<body>
+     <!-- Top-most div -->
+    <!-- <div class="headline">
+        <div class="title">
+            <h1>e</h1>
+            <h1>b</h1>
+            <h1>a</h1>
+            <h1>y</h1>
+        </div>
+        <h2>Checkout</h2>
+    </div> -->
+
+    <!-- 2nd div -->
+    <div class="SecDiv">
+        <p>Pay with a credit or debit card. It's simple and secure, and you can save it for a faster checkout next time</p>
+    </div>
+    <!-- 3rd div for payment and confirmation --> 
+    <div class="payWith">
+        <div class="payOptions">
+            <div>
+                <h3>Pay with</h3>
+            </div>
+            <hr>
+             
+            <div class="GooglePay">
+                <input type="radio" id="payPalCredit" name="payment" value="payPalCredit">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmYMJ_uYvXnK3j0O9_lluoADHRUg8-8OZ5Vk-USE6cGwUA9ofznfIm5gu87OmiRR3dbg&usqp=CAU" alt="" height="25px" width="45px">
+                <label for="payPalCredit">Google Pay</label>
+            </div>
+            
+            <hr>
+
+            <div class="PayPal">
+                <input type="radio" id="PayPal" name="payment" value="PayPal">
+                <img src="https://logos-download.com/wp-content/uploads/2016/03/PayPal_Logo_2007.png" alt="" height="18px" width: "25px">            
+            </div>
+            <hr>
+
+            <div class="PayPalCredit">
+                <input type="radio" id="gPay" name="payment" value="gPay">
+                <img src="https://www.kindpng.com/picc/m/388-3884385_paypal-png-logo-transparent-paypal-credit-logo-png.png" alt="" height="30px" width="70px">
+            </div>
+            <hr>
+
+           
+
+            <div class="newCard">
+                <input type="radio" id="newCard" name="payment" value="newCard">
+                <label for="newCard">Add new card</label>
+            </div>
+        </div>
+
+        <div class="confirmation">
+            <p>Subtotal<span id="paymentSubTotal" class="pto">0</span></p>
+            <p>Shipping<span class="pto">Rs 80</span></p>
+            <hr>
+            <h4>Order total <span id="paymentTotal" class="pto">0</span></h4>
+            <button id="button">Confirm and pay</button>
+
+        </div>
+    </div>
+
+    <div  id="card">
+        <h1>Add card details</h1>
+        <div id="details">
+            <label> Card No:<span>*</span></label><br>
+            <input type = "text" id = "cardNo" disabled><br>
+    
+            <label for = ""> Card Type: <span>*</span></label><br>
+            <input type = "text" id = "type" disabled><br>
+            
+            <label for = ""> Expiry Month: <span>*</span></label><br>
+            <input type = "text" id = "date" disabled><br>
+            
+            <label for = ""> Expiry Year: <span>*</span></label><br>
+            <input type = "text" id = "year" disabled><br>
+            
+            <label for = ""> CVV: <span>*</span></label><br>
+            <input type = "text" id = "cvv" disabled><br>
+            
+            <label for = "">Cardholder Name: <span>*</span></label><br>
+            <input type = "text" id = "name" disabled><br>
+            
+            
+        </div>
+       
+    </div>
+    
+
+</body>
+</html>
+<script>
+    document.getElementById("newCard").addEventListener("click", addDetails)
+ var pto1  = document.getElementById('paymentTotal');
+ var pto2  = document.getElementById('paymentSubTotal');
+
+
+ var total12 = JSON.parse(localStorage.getItem('ebayCartTotla'))
+ pto1.textContent=(Number(total12)+80);
+ pto2.textContent=`${total12}`
+    
+
+    function addDetails()
+    {
+        document.getElementById("cardNo").disabled = false;
+        document.getElementById("type").disabled = false;
+        document.getElementById("date").disabled = false;
+        document.getElementById("year").disabled = false;
+        document.getElementById("cvv").disabled = false;
+        document.getElementById("name").disabled = false;
+        
+        document.querySelector("#button").addEventListener("click", payment)
+        
+
+        function payment()
+    {
+       
+
+        var cardtype =  document.getElementById("type").value
+        var cardDate =  document.getElementById("date").value
+        var year = document.getElementById("year").value
+        var cvv = document.getElementById("cvv").value
+        var name = document.getElementById("name").value
+        var num = document.getElementById("cardNo").value
+       
+        if(cardtype && cardDate && year && cvv && name && num)
+        {
+            window.location.href = "otp.html";
+        }
+
+        else
+           window.alert("All fields are mandetory")
+        
+      
+
+    }
+
+
+    }
+</script>

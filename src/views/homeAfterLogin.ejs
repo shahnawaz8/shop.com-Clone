@@ -14,7 +14,7 @@
 </head>
 <body>
     <% if(message){%>
-        <%= alert(`Welcome MR ${user.firstName}`)%>
+        <h1><%= "welcome "+user.firstName + user.lastName%></h1>
 
 
 
@@ -65,8 +65,13 @@
                                                 href="">Deals</a> </li>
                                         <li class="header-right-bottom-item"> <a class="header-right__dept-link"
                                                 href="">SHOP Travel</a> </li>
-                                        <li class="header-right-bottom-item"> <a class="header-right__dept-link"
-                                                href="">Departments</a> </li>
+                                        <li class="header-right-bottom-item"><a style="text-decoration:none ;" href="/api/products/products">Electronics</a>
+                                                
+                                            
+                                            
+                                            
+                                            
+                                            </li>
                                         <li class=""> <a class="header-right__dept-link"
                                                 href="">ShopBuddy</a> </li>
                                         <li class="header-right-bottom-item"> <a class="header-right__dept-link"
@@ -77,7 +82,7 @@
                             <div class="header-right-bottom-right">
                                 <div id="ssign" class=header-right-bottom-right-logo>
                                     <img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="">
-                                    <span><a href="/login">SignIn</a></span>
+                                    <span><a href="/"><%=user.firstName +" "+"Logout"%></a></span>
                                     
                                 </div>
                                 <div class=header-right-bottom-right-logo>

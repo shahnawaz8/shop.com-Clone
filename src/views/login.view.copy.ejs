@@ -110,7 +110,9 @@
                         <div class="signup-input">
                             <div class="thin">Password (At least 7 characters)</div>
                             <input id="userPass" class="sign-inp" type="password" placeholder="Please enter a minimum of 7 characters" name="password" style="font-style: italic;">
-                
+                            <%if(error){%>
+                                <span style="color: red;"><%=error%></span>
+                                <%}%>
                         </div>
                         
                     </div>
