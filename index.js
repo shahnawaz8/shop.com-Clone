@@ -18,8 +18,6 @@ app.use(
     extended: true,
   })
 );
-
-// app.use(express.urlencoded({ extended: false }))
 app.set("view engine", "ejs");
 
 //session
